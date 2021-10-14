@@ -1,0 +1,68 @@
+{% load staticfiles %}
+body{
+    background-image: url(news/images/tree.jpg);
+}
+
+ body{
+     background: url("/static/news/img/sky.jpg") no-repeat ;
+     background-size: 1800px 900px;
+     background-repeat: no-repeat;
+     background-position: top;
+     background-attachment: fixed;
+     background-size: 100%;
+     }
+
+.list-group-item.active {
+    z-index: 3;
+    color: #fff;
+    background-color: #000000;
+    border-color: #FFFFFF;
+
+}
+
+.list-group-item.active ol:hover, .list-group-item.active li:hover {
+    color: #eb5959;
+    transform: scale(1.05);
+
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #1F2FCF;
+}
+
+.page-item.active .page-link{
+    z-index: 3 ;
+    color: #fff ;
+    background-color: #000000 ;
+    border-color: #FFFFFF ;
+}
+
+.sr-only {
+    color: #CF3C1F;
+    background-color: #CFC71F;
+}
+
+.card-header{
+    color: #F5FCFA;
+    background-color: #161C1A;
+}
+
+.container-fluid {
+    background-color: #A0A39F
+}
+.navbar-toggler{
+    background-color: #D8D536
+}
+
+.btn-outline-success {
+    color: #131413;
+    border-color: #131413;
+    background-color: #E7B231;
+}
+
+.errorlist .li{
+    color: #ED3620;
+}

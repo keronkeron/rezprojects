@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login :: {{block.supper }}
+{% endblock %}
+
+{% block sidebar %}
+
+{% include 'inc/_sidebar.html' %}
+
+{% endblock %}
+
+{% block content %}
+
+<h1 style="color: #F7F6F3;">Login</h1>
+
+<form method="post">
+    {% csrf_token %}
+<h5 style="color: #F7F6F3;">{{ form.as_p }}</h5>
+<button type="submit" class="btn btn-primary btn-block" >Login</button>
+</form>
+{% endblock %}
+
+
+

@@ -1,0 +1,17 @@
+{% load news_tags %}
+<!--{% comment %}-->
+<ol class="list-group-item d-flex justify-content-between align-items-start">
+  {% get_categories as categories %}
+  {% for item in categories %}
+    <li class="list-group-item" href="{% url 'category' item.pk %}" >{{item.title}}</li>
+  {% endfor %}
+
+</ol>
+
+
+<br>
+<!--{% endcomment %}-->
+
+{% show_categories %}
+
+
